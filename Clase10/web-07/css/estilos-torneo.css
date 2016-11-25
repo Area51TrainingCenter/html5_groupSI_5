@@ -1,0 +1,72 @@
+.cuerpo {
+	background-color: #02c5b5
+}
+
+.cuerpo main {
+	width:1280px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	overflow: hidden;
+	font-size: 0;
+	padding-bottom:50px;
+}
+
+.cuerpo main > div {
+	display: inline-block;
+	width: 50%;
+	font-family: 'nerislight';
+	font-size: 15px;
+	line-height: 20px;
+	text-align: justify;
+	color: #242424;
+}
+
+.cuerpo main > div:nth-child(odd) {
+	padding-right: 11.5px;
+	width: 49.8780487804878%;
+	vertical-align: top
+}
+
+.cuerpo main > div:nth-child(odd) h2 {
+	margin-top: 18px
+}
+
+.cuerpo main > div:nth-child(even) {
+	padding-left: 40.5px;
+	width: 49.8780487804878%;
+	vertical-align: top
+}
+
+.cuerpo main > div:nth-child(1) {
+	margin-bottom: 45px;
+}
+
+.cuerpo main > div a,
+.cuerpo main > div a:link,
+.cuerpo main > div a:active,
+.cuerpo main > div a:visited,
+.cuerpo main > div a:hover {
+	font-family: 'nerissemibold';
+	color: #242424;
+	text-decoration: underline;
+}
+
+.cuerpo main h2 {
+	color: #006770;
+	font-size: 50px;
+	line-height: 50px;
+	font-family: 'neristhin_italic';
+	text-transform: uppercase;
+	margin-top: 0px;
+	margin-bottom:30px;
+}
+
+.cuerpo main h2:after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 3px;
+	background-color: #006770;
+	margin-top:9px;
+}
