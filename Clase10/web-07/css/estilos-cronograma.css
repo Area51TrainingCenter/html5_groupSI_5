@@ -1,0 +1,27 @@
+.cuerpo {
+	background-color: #02c5b5
+}
+
+.cuerpo main {
+	width:1280px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	font-size: 0;
+	padding-bottom:50px;
+}
+
+.cuerpo main article {
+	width: 666px;
+	height: 500px;
+	padding-right: 186px;
+	background-color: blue;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.cuerpo main section {
+	width: 614px;
+	display: inline-block;
+}
+
