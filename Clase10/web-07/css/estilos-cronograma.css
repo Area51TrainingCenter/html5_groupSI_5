@@ -1,5 +1,5 @@
 .cuerpo {
-	background-color: #02c5b5
+	background-color: #9e6cd2
 }
 
 .cuerpo main {
@@ -13,11 +13,67 @@
 
 .cuerpo main article {
 	width: 666px;
-	height: 500px;
-	padding-right: 186px;
-	background-color: blue;
+	padding-right: 104px;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.cuerpo main h2 {
+	font-family: neristhin_italic;
+	font-size: 50px;
+	color: #4b0185;
+}
+
+.cuerpo main h2:after {
+	content: "";
+	display: block;
+	width: 30px;
+	height: 3px;
+	margin-top: 9px;
+	background-color:#4b0185;
+}
+
+.cuerpo main div.linea {
+	border-top:1px solid #fff;
+	padding-top: 22px;
+	padding-bottom: 22px;
+	overflow: hidden;
+}
+
+.cuerpo main div.linea:last-child {
+	border-bottom:1px solid #fff;
+}
+
+.cuerpo main div.linea div.imagen {
+	width: 86px;
+	float: left;
+	padding-left: 27px;
+	text-align: center;
+}
+
+.cuerpo main div.linea div.textos {
+	width: 476px;
+	float: left;
+	padding-left: 36px;
+}
+
+.cuerpo main div.linea div.textos h3 {
+	font-family: nerissemibold;
+	font-size: 20px;
+	color: #000;
+	text-transform: uppercase;
+	margin-top: 2px;
+	margin-bottom: 7px;
+	line-height: 20px;
+}
+
+.cuerpo main div.linea div.textos p {
+	width: 351px;
+	font-family: nerislight;
+	font-size: 15px;
+	color: #000;
+	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 .cuerpo main section {
@@ -25,3 +81,8 @@
 	display: inline-block;
 }
 
+/*.cabecera header .redes-menu nav ul li:nth-child(2) a.activo {*/
+.activo {
+	background-color: #5d01a4 !important;
+	color: #fff !important;
+}
