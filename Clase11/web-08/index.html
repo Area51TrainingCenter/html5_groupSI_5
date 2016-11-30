@@ -9,6 +9,7 @@
 <script src="https://use.fontawesome.com/c8f7bfdac2.js"></script>		
 	</head>
 	<body>
+		<div class="menu-movil"></div>
 
 		<div class="cabecera">
 			<header>
@@ -81,6 +82,19 @@
 				</div>
 			</footer>
 		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script>
+		$(function(){
+			$(".icono-menu").on("click", function(e){
+				$(".menu-movil").css("right","0px")
+
+			})
+
+		})
+		</script>
+
+
 
 	</body>
 </html>

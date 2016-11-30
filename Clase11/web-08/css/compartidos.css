@@ -51,6 +51,17 @@ body {
     padding:0;
 }
 
+div.menu-movil {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    right: -200px;
+    background-color: skyblue;
+    z-index: 200000;
+    transition: all 500ms;
+}
+
 .cabecera {
     position:fixed;
     background-color: #ffffff;
