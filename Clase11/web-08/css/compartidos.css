@@ -71,6 +71,15 @@ body {
 
 .cabecera header .logo {
     float:left;
+    position: relative
+}
+
+.cabecera header .logo a.icono-menu {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px
 }
 
 .cabecera header .redes-menu {
@@ -226,6 +235,7 @@ body {
 
     .cabecera header .redes-menu nav {
         width: 100%;
+        margin-top: 10px;
     }
 
     .cabecera header .redes-menu nav li {
@@ -234,7 +244,21 @@ body {
         border-right: 1px solid #fff
     }
 
+    .cabecera header .redes-menu nav li:last-child {
+        border: none;
+    }
+
     .cabecera header .redes-menu .redes {
         display: none
+    }
+}
+
+@media screen and (max-width:620px) {
+    .cabecera header .redes-menu {
+        display: none;
+    }
+
+    .cabecera header .logo a.icono-menu {
+        display: block
     }
 }
