@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			html, body {
+				margin: 0;
+				padding:0;
+			}
+
+			div, article, section, aside {
+				float:left;
+				width:25%;
+				height: 200px;
+				font-size: 17px;
+			}
+
+			div {background-color: red}
+			article {background-color: green}
+			section {background-color: blue}
+			aside {background-color: yellow}
+
+
+			@media screen and (max-width:480px) {
+				div, section, article, aside {
+					width: 100%;
+				}
+			}
+
+			@media screen and (max-width:770px) {
+				div, section, article, aside {
+					width: 50%;
+				}
+			}
+
+
+		</style>
+		
+	</head>
+	<body>
+		
+		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum veniam facilis at voluptatum iure, ipsam deleniti quibusdam labore impedit veritatis magni ab inventore nam, distinctio expedita fugiat eaque ea, quidem.</div>
+		<article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor assumenda earum adipisci placeat hic consequatur possimus nostrum enim eligendi obcaecati! Perspiciatis aperiam saepe laborum distinctio a optio quis quos facilis.</article>
+		<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam voluptas quia sit dignissimos est architecto, accusantium dicta quos, quibusdam assumenda fugiat animi hic quod ad facere nisi earum maiores! Cumque.</section>
+		<aside>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo amet eos facere qui, fuga voluptas quis architecto ipsam nulla commodi accusantium inventore, deleniti fugiat sit nemo tempore sint? Qui, reiciendis?</aside>
+
+	</body>
+</html>

@@ -1,0 +1,240 @@
+@font-face {
+    font-family: 'nerissemibold_italic';
+    src: url('fonts/597902-webfont.woff2') format('woff2'),
+         url('fonts/597902-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nerislight';
+    src: url('fonts/neris-light-webfont.woff2') format('woff2'),
+         url('fonts/neris-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nerisblack';
+    src: url('fonts/597903-webfont.woff2') format('woff2'),
+         url('fonts/597903-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'neristhin_italic';
+    src: url('fonts/597901-webfont.woff2') format('woff2'),
+         url('fonts/597901-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nerissemibold';
+    src: url('fonts/neris-semibold-webfont.woff2') format('woff2'),
+         url('fonts/neris-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+}
+
+.cabecera {
+    position:fixed;
+    background-color: #ffffff;
+    z-index: 100;
+    width: 100%;
+    top:0;
+}
+
+.cabecera header {
+    width:1280px;
+
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    font-size:0;
+    padding-top:9px;
+}
+
+.cabecera header .logo {
+    float:left;
+}
+
+.cabecera header .redes-menu {
+    float: right;
+    width:807px;
+}
+
+.cabecera header .redes-menu .redes {
+    text-align: right;
+} 
+
+.cabecera header .redes-menu .redes img {
+    margin-left:7px;
+}
+
+.cabecera header .redes-menu nav {
+    margin-top:47px;
+}
+
+.cabecera header .redes-menu nav ul {
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    margin:0;
+}
+
+.cabecera header .redes-menu nav li {
+    float:left;
+    width:200px;
+    margin-right:2px;
+}
+
+.cabecera header .redes-menu nav li:last-child{
+    margin-right: 0;
+}
+
+.cabecera header .redes-menu nav a,
+.cabecera header .redes-menu nav a:link,
+.cabecera header .redes-menu nav a:visited,
+.cabecera header .redes-menu nav a:active {
+    font-family: nerissemibold_italic;
+    font-size:18px;
+    display: block;
+    width:100%;
+    /*padding-top:18.5px;
+    padding-bottom:18.5px;*/
+    text-align: center;
+    line-height: 55px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #242422;
+    background-color: #f2f2f2;
+    transition: all 350ms;
+}
+
+.cabecera header .redes-menu nav ul li:nth-child(1) a:hover {
+    background-color: #00bcad;
+    color: #fff;
+}
+
+.cabecera header .redes-menu nav ul li:nth-child(2) a:hover {
+    background-color: #5d01a4;
+    color:#ffffff;
+}
+
+.cabecera header .redes-menu nav ul li:nth-child(3) a:hover {
+    background-color: #ffb700;
+    color:#ffffff;  
+}
+
+.cabecera header .redes-menu nav ul li:nth-child(4) a:hover {
+    background-color: #da156f;
+    color:#ffffff;  
+}
+
+.cuerpo {
+    margin-top: 159px
+}
+
+.pie {
+    background-color: #0062a9;
+}
+
+.pie footer {
+    width:1280px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.pie footer div.lema,
+.pie footer address,
+.pie footer div.logo {
+    width: 426.6666666666667px;
+    display: inline-block;  
+    vertical-align: middle;
+}
+
+
+.pie footer address {
+    font-size: 15px;
+    color: #ffffff;
+    font-style: normal;
+    text-align: center;
+    font-family: nerislight;
+}
+
+.pie footer address span {
+    font-family: nerisblack
+}
+
+.pie footer address a,
+.pie footer address a:link,
+.pie footer address a:visited,
+.pie footer address a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+.pie footer address a:hover {
+    text-decoration: underline;
+}
+
+.pie footer address a:nth-of-type(1) {
+    margin-right: 60px
+}
+
+.pie footer div.logo {
+    text-align: right;
+}
+
+
+@media screen and (max-width: 1280px) {
+    .cabecera header {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .cabecera header .logo {
+        float: none;
+        clear: both;
+        text-align: center;
+    }
+
+    .cabecera header .redes-menu {
+        float: none;
+        clear: both;
+        width: 100%;
+    }
+
+    .cabecera header .redes-menu nav {
+        width: 100%;
+    }
+
+    .cabecera header .redes-menu nav li {
+        width: 25%;
+        margin: 0;
+        border-right: 1px solid #fff
+    }
+
+    .cabecera header .redes-menu .redes {
+        display: none
+    }
+}
