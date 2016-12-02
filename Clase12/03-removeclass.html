@@ -1,11 +1,11 @@
 <!doctype html>
 <html>
 	<head>
-		
+		<link rel="stylesheet" href="estilos-addclass.css">
 	</head>
 	<body>
 
-	<div class="rojo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi temporibus dolor, ea odit doloremque aut dicta iusto similique molestiae, illo! Voluptatem quasi, totam sequi iste minima qui at rem.
+	<div class="rojo grande">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At commodi temporibus dolor, ea odit doloremque aut dicta iusto similique molestiae, illo! Voluptatem quasi, totam sequi iste minima qui at rem.
 	</div>	
 
 	<article class="rojo">
@@ -21,27 +21,7 @@
 	<script>
 		$(function(){
 
-			// $("body").css("background-color", "blue")
-			// $("body").css("font-size", "50px")
-
-			$("body").css({
-				"background-color": "blue", 
-				"font-size": "50px"
-			})
-
-			$("div").css("width", "500px")
-			$("div").css("margin", "0 auto")
-
-			$("div").css("margin-top", "0")
-			$("div").css("margin-bottom", "0")
-			$("div").css("margin-left", "auto")
-			$("div").css("margin-right", "auto")
-
-			$("article.rojo").css("color", "red")
-
-			$("article").css("background-color", "pink")
-
-			$("article.rojo").css("color", "purple")
+			$("div.rojo").removeClass("rojo")
 
 		})
 		

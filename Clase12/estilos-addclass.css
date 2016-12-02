@@ -1,0 +1,15 @@
+div.rojo {
+	color: red;
+}
+
+div.rojo.grande {
+	font-size: 50px;
+}
+
+.amarillo {
+	background-color: yellow;
+}
+
+.subrayado {
+	text-decoration: underline;
+}

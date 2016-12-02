@@ -1,0 +1,13 @@
+div {
+	width: 250px;
+	height: 600px;
+	background-color: red;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: left 1.5s;
+}
+
+.moverDerecha {
+	left: 200px
+}
