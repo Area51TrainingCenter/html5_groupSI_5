@@ -64,7 +64,17 @@
 	padding:0;	
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1280px) {
+	.cuerpo main{
+		width: 100%;
+	}
+
+	.cuerpo {
+		background-position-x: -242px;
+	}
+}
+
+@media screen and (max-width:1180px) {
 	  .cuerpo main div.cronograma {
         display: none;
     }
