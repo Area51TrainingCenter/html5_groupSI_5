@@ -1,0 +1,182 @@
+<!doctype html>
+<html>
+	<head></head>
+	<meta charset="utf-8">
+	<style>
+		html, body {
+			width: 100%;
+			height: 100%
+		}
+
+		body {
+			background-image: url(img/fondo.jpg);
+			background-size:  cover;
+		}
+
+		div.teclas {
+			width: 810px;
+			height: 100px;
+			margin: -50px auto 0 auto;
+			position: relative;
+			top: 50%;
+		}
+
+		div.teclas div.letra {
+			width: 80px;
+			height: 100px;
+			margin-left: 5px;
+			margin-right: 5px;
+			background-color: rgba(0, 0, 0, 0.8);
+			float: left;
+			color:  #ffffff;
+			font-family: Verdana;
+			border: 1px solid yellow;
+			box-sizing: border-box;
+			transition: box-shadow 0.07s;
+		}
+	
+		div.teclas div.letra.playing {
+			box-shadow: 0px 0px 20px yellow
+		}
+					
+
+		div.teclas div.letra h2 {
+			text-align: center
+		}
+
+		div.teclas div.letra h3 {
+			font-size: 12px;
+			text-align: center
+		}
+	</style>
+	<body>
+
+
+	<div class="teclas">
+		<div class="letra" id="letra-65">
+			<h2>A</h2>
+			<h3>boom</h3>
+		</div>
+		<div class="letra" id="letra-83">
+			<h2>S</h2>
+			<h3>clap</h3>
+		</div>
+		<div class="letra" id="letra-68">
+			<h2>D</h2>
+			<h3>hihat</h3>
+		</div>
+		<div class="letra" id="letra-70">
+			<h2>F</h2>
+			<h3>kick</h3>
+		</div>
+		<div class="letra" id="letra-74">
+			<h2>J</h2>
+			<h3>openhat</h3>
+		</div>
+		<div class="letra" id="letra-75">
+			<h2>K</h2>
+			<h3>ride</h3>
+		</div>
+		<div class="letra" id="letra-76">
+			<h2>L</h2>
+			<h3>snare</h3>
+		</div>
+		<div class="letra" id="letra-192">
+			<h2>Ñ</h2>
+			<h3>tink</h3>
+		</div>
+		<div class="letra" id="letra-32">
+			<h2>SPA</h2>
+			<h3>tom</h3>
+		</div>
+
+
+	</div>
+		
+
+	<audio class="key-65" src="sonidos/boom.wav"></audio>
+	<audio class="key-83" src="sonidos/clap.wav"></audio>
+
+	<audio class="key-68" src="sonidos/hihat.wav"></audio>
+	<audio class="key-70" src="sonidos/kick.wav"></audio>
+
+	<audio class="key-74" src="sonidos/openhat.wav"></audio>
+	<audio class="key-75" src="sonidos/ride.wav"></audio>
+
+	<audio class="key-76" src="sonidos/snare.wav"></audio>
+	<audio class="key-192" src="sonidos/tink.wav"></audio>
+
+	<audio class="key-32" src="sonidos/tom.wav"></audio>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+		$(window).on("keyup", function(evt){
+			if(evt.keyCode==65) {
+				$(".key-65").get(0).currentTime=0
+				$(".key-65").trigger("play")
+				$("#letra-65").addClass("playing")
+			} 
+			
+			if(evt.keyCode==83) {
+				$(".key-83").get(0).currentTime=0
+				$(".key-83").trigger("play")
+				$("#letra-83").addClass("playing")
+			} 
+
+			if(evt.keyCode==68) {
+				$(".key-68").get(0).currentTime=0
+				$(".key-68").trigger("play")
+				$("#letra-68").addClass("playing")
+			} 
+			
+			if(evt.keyCode==70) {
+				$(".key-70").get(0).currentTime=0
+				$(".key-70").trigger("play")
+				$("#letra-70").addClass("playing")
+			} 
+
+			if(evt.keyCode==74) {
+				$(".key-74").get(0).currentTime=0
+				$(".key-74").trigger("play")
+				$("#letra-74").addClass("playing")
+			} 
+			
+			if(evt.keyCode==75) {
+				$(".key-75").get(0).currentTime=0
+				$(".key-75").trigger("play")
+				$("#letra-75").addClass("playing")
+			} 
+
+			if(evt.keyCode==76) {
+				$(".key-76").get(0).currentTime=0
+				$(".key-76").trigger("play")
+				$("#letra-76").addClass("playing")
+			} 
+			
+			if(evt.keyCode==192) {
+				$(".key-192").get(0).currentTime=0
+				$(".key-192").trigger("play")
+				$("#letra-192").addClass("playing")
+			} 
+
+			if(evt.keyCode==32) {
+				$(".key-32").get(0).currentTime=0
+				$(".key-32").trigger("play")
+				$("#letra-32").addClass("playing")
+			} 
+
+
+		})
+
+		$("div.letra").on("transitionend", function(e){
+			$(this).removeClass("playing")
+		})
+
+	</script>
+
+
+
+
+	</body>
+</html>

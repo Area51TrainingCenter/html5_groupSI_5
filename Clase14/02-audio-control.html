@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head></head>
+	<meta charset="utf-8">
+	<body>
+		
+
+	<audio src="sonidos/boom.wav"></audio>
+
+	<button>Tocar</button>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<script>
+		$("button").on("click", function(){
+			$("audio").trigger("play")
+		})
+
+		$(window).on("keyup", function(evt){
+			//console.log(evt)
+			if(evt.keyCode==65) {
+				$("audio").trigger("play")
+			} 
+			
+		})
+
+	</script>
+
+
+
+
+	</body>
+</html>
