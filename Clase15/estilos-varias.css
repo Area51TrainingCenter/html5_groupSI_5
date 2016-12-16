@@ -1,0 +1,34 @@
+div {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	border-radius: 50%;
+	animation: 5s traslacion,  3s cambioColor;
+}
+
+@keyframes traslacion {
+	0% {
+		transform: translate(0px, 0px);
+	}
+	50% {
+		transform: translate(400px, 400px);
+	}
+
+	100% {
+		transform: translate(800px, 0px);
+	}
+}
+
+@keyframes cambioColor {
+	0% {
+		background-color: red;
+	}
+	50% {
+		background-color: green;
+	}
+
+	100% {
+		background-color: blue;
+	}
+}
+
