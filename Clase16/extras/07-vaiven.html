@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja:hover {
+		-webkit-animation: 1s vaiven 1;
+		-moz-animation: 1s vaiven 1;
+		animation: 1s vaiven 1;
+	}		
+
+
+	@keyframes vaiven{
+		15% {
+			transform: rotate(-10deg) translateX(-25%)
+		}
+		25% {
+			transform: rotate(5deg) translateX(20%)
+		}	
+		45% {
+			transform: rotate(-3deg) translateX(-10%)
+		}	
+		60% {
+			transform: rotate(2deg) translateX(5%)
+		}	
+		85% {
+			transform: rotate(-1deg) translateX(-3%)
+		}	
+
+	}
+	</style>
+</head>
+<body>
+<div class="caja">Vaivén</div>
+</body>
+</html>

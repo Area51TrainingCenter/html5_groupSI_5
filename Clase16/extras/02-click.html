@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja:hover {
+		-webkit-animation: 0.7s click 1;
+		-moz-animation: 0.7s click 1;
+		animation: 0.7s click 1;
+	}		
+
+
+	@keyframes click{
+		25% {
+			transform: scale(.8);
+		}
+		50% {
+			transform: scale(1.1);
+		}
+		75% {
+			transform: scale(.8)
+		}
+	}
+	</style>
+</head>
+<body>
+<div class="caja">Clic</div>
+</body>
+</html>

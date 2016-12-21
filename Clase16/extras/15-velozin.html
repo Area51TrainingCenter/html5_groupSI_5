@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja {
+		-webkit-animation: 1s velozin 1;
+		-moz-animation: 1s velozin 1;
+		animation: 1s velozin 1;
+	}		
+
+
+	@keyframes velozin{
+		0% {
+			opacity: 0;
+			transform: translateX(-100%) skewX(30deg);
+		}
+
+		60% {
+			opacity: 1;
+			transform: translateX(-20%) skewX(-30deg);
+		}
+
+		80% {
+			transform: translateX(0%) skewX(15deg);
+		}
+
+	}
+
+	</style>
+</head>
+<body>
+<div class="caja">VelozIn</div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja:hover {
+		-webkit-animation: 1s cartel infinite;
+		-moz-animation: 1s cartel infinite;
+		animation: 1s cartel infinite;
+		transform-origin: top center
+	}		
+
+
+	@keyframes cartel{
+		20% {
+			transform: rotate(15deg)
+		}
+		40% {
+			transform: rotate(-10deg)
+		}
+		60% {
+			transform: rotate(5deg);
+		}
+		80% {
+			transform: rotate(-3deg)
+		}
+
+	}
+	</style>
+</head>
+<body>
+<div class="caja">Cartel</div>
+</body>
+</html>

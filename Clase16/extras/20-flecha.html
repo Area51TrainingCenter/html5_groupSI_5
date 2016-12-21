@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+		position:relative;
+	}
+
+	div.caja:before {
+		position: absolute;
+		content: "";
+		border-color: transparent red transparent transparent;
+		border-width: 15px 15px 15px 0;
+		border-style: solid;
+
+		left: 5px;
+		top:50%;
+		margin-top: -15px;
+	}
+
+	div.caja:hover:before {
+		animation: 1.5s moverFlecha infinite;
+	}
+
+	@keyframes moverFlecha {
+		25% {
+			left: -15px;
+			transform: rotate(0deg);
+		}
+
+		65% {
+			left: -15px;
+			transform: rotate(180deg)
+		}
+
+		90% {
+			transform: rotate(180deg);
+		}
+	}
+
+	
+
+
+
+	</style>
+</head>
+<body>
+<div class="caja">Sombra</div>
+</body>
+</html>

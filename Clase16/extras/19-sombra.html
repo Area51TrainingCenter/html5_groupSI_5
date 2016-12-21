@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+		position:relative;
+	}
+
+	div.caja:before {
+		position: absolute;
+		content: "";
+		top: 100%;
+		left:5%;
+		height: 10px;
+		width: 90%;
+		opacity: 0;
+		background: radial-gradient(ellipse, rgba(0, 0, 0, 0.6) 50%, rgba(0, 0, 0, 0) 80%);
+	}
+
+	div.caja:hover {
+		animation: 1s mover 1;
+	}		
+
+	div.caja:hover:before {
+		opacity: 0.4;
+		animation: 1s moversombra 1;
+	}	
+
+	@keyframes mover {
+		50% {
+			transform: translateY(-5px);
+		}
+	}
+
+	@keyframes moversombra {
+		50% {
+			opacity: 1;
+			transform: translateY(5px);
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+
+	</style>
+</head>
+<body>
+<div class="caja">Sombra</div>
+</body>
+</html>

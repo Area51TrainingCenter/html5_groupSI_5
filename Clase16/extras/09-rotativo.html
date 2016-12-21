@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja {
+		-webkit-animation: 1s outRotativo 1;
+		-moz-animation: 1s outRotativo 1;
+		animation: 1s outRotativo 1;
+	}		
+
+
+	@keyframes inRotativo{
+		0% {
+			opacity: 0;
+			transform: translateX(-100%) rotate(-260deg);
+		}
+	}
+
+	@keyframes outRotativo{
+		100% {
+			opacity: 0;
+			transform: translateX(100%) rotate(260deg);
+		}
+	}	
+	</style>
+</head>
+<body>
+<div class="caja">inRotativo</div>
+</body>
+</html>

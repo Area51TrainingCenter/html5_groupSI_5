@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			div {
+				width:  200px;
+				height: 80px;
+				margin:  50px auto;
+				background-color: green;
+				transform-origin: center bottom;
+				animation: 750ms animacion linear
+			}
+
+			@keyframes animacion {
+				20% {
+					transform: translateX(-50px) rotate(-20deg)
+				}
+
+				40% {
+					transform: translateX(40px) rotate(15deg)
+				}
+
+				60% {
+					transform: translateX(-30px) rotate(-10deg)
+				}
+
+				80% {
+					transform: translateX(20px) rotate(5deg)
+				}
+			}
+
+		</style>
+		
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

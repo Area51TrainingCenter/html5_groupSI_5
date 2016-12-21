@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja {
+		-webkit-animation: 1s reboteout 1;
+		-moz-animation: 1s reboteout 1;
+		animation: 1s reboteout 1;
+	}		
+
+
+	@keyframes reboteout{
+		25% {
+			transform: scale(.9);
+		}
+		50% {
+			opacity: 1;
+			transform: scale(1.1);
+		}
+
+		100% {
+			opacity: 0;
+			transform: scale(0);
+		}
+	}
+
+	</style>
+</head>
+<body>
+<div class="caja">Rebote</div>
+</body>
+</html>

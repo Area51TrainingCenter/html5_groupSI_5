@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			div {
+				width:  200px;
+				height: 200px;
+				margin:  50px auto;
+				background-color: green;
+				animation: .5s animacion linear infinite;
+			}
+
+			@keyframes animacion {
+				25%, 75% {
+					transform: translateX(-20px)
+				}
+
+				50%, 100% {
+					transform: translateX(20px)
+				}
+
+				12.5%, 62.5% {
+					transform: translateY(-20px);
+				}
+
+				37.5%, 87.5% {
+					transform: translateY(20px)
+				}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

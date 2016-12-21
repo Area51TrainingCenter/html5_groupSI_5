@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja {
+		-webkit-animation: 1s reboteVariante 1;
+		-moz-animation: 1s reboteVariante 1;
+		animation: 1s reboteVariante 1;
+	}		
+
+
+	@keyframes reboteVariante{
+		20% {
+			opacity: 1;
+			transform: translateY(30px);
+		}
+
+		100% {
+			opacity: 0;
+			transform: translateY(-500px);
+		}
+	}
+
+	</style>
+</head>
+<body>
+<div class="caja">Rebote Variante</div>
+</body>
+</html>

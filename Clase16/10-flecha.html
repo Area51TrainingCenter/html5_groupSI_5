@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			div {
+				width: 0px;
+				height: 0px;
+				background-color: transparent;
+				border-top: 20px solid transparent;
+				border-right: 20px solid red;
+				border-bottom: 20px solid transparent;
+				border-left: 0px solid transparent;
+				margin:  50px auto;
+				animation:  2s animacion linear;
+			}
+
+			@keyframes animacion {
+				15% {
+					transform: translateX(-100px)
+				}
+
+				30% {
+					transform: translateX(-100px) rotate(180deg)
+				}
+
+				90% {
+					transform: rotate(180deg);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			div {
+				width:  200px;
+				height: 200px;
+				background-color: green;
+/* 				animation: 10s moverse linear forwards; */
+				/* animation: 10s moverse 5s linear backwards; */
+				animation: 10s moverse 5s linear both;
+			}
+
+/* 			@-webkit-keyframes
+			@-moz-keyframes
+			@-ms-keyframes
+			@-o-keyframes */
+			@keyframes moverse {
+				0% {
+					transform: translateX(0px) translateY(0px);
+					background-color: red
+				}
+
+				25% {
+					transform: translateY(500px);
+				}
+
+				100% {
+					transform: translateX(500px) translateY(500px);
+				}
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja {
+		-webkit-animation: 2s caida 1;
+		-moz-animation: 2s caida 1;
+		animation: 2s caida 1;
+		transform-origin: top left
+	}		
+
+
+	@keyframes caida{
+		20%, 60% {
+			transform: rotate(80deg);
+		}
+		40% {
+			transform: rotate(60deg);
+		}
+		80% {
+			opacity: 1;
+			transform: rotate(60deg);
+		}
+		100% {
+			transform: translateY(400px);
+			opacity: 0
+		}
+
+
+	}
+	</style>
+</head>
+<body>
+<div class="caja">Caida</div>
+</body>
+</html>

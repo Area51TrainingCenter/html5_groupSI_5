@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja {
+		-webkit-animation: 2s giro 1;
+		-moz-animation: 2s giro 1;
+		animation: 2s giro 1;
+		transform-origin: left bottom;
+	}		
+
+
+	@keyframes giro{
+		0% {
+			opacity: 0;
+			transform:rotate(-200deg);
+		}
+
+
+	}
+
+	</style>
+</head>
+<body>
+<div class="caja">Giro Variante</div>
+</body>
+</html>

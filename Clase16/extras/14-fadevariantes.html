@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja {
+		-webkit-animation: 1s fadevariantes 1;
+		-moz-animation: 1s fadevariantes 1;
+		animation: 1s fadevariantes 1;
+		position: relative;
+		overflow: hidden;
+	}		
+
+	div.tapa {
+		width: 100%;
+		height: 100%;
+		background-color: white;
+		left:100%;
+		top:0;
+		position: absolute;
+		animation: 1s retirada 1;
+	}
+
+
+	@keyframes fadevariantes{
+		0% {
+			opacity: 0
+		}
+
+		50% {
+			opacity: .3
+		}	
+	}
+
+	@keyframes retirada {
+		0% {
+			left:0%;
+		}
+	}
+
+	</style>
+</head>
+<body>
+<div class="caja"><div class="tapa"></div>Fade Variante</div>
+</body>
+</html>

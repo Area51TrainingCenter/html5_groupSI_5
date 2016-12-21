@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:200px;
+		height: 80px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+	}
+
+	div.caja:hover {
+		-webkit-animation: 1s flash 1;
+		-moz-animation: 1s flash 1;
+		animation: 1s flash 1;
+	}		
+
+
+	@keyframes flash{
+		0% {
+			opacity:1;
+		}
+		25% {
+			opacity:0;
+		}
+		50% {
+			opacity:1;
+		}
+		75% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	</style>
+</head>
+<body>
+<div class="caja"></div>
+</body>
+</html>

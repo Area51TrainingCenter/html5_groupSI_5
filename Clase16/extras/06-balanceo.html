@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+	div.caja {
+		width:100px;
+		padding:20px 40px;
+		background-color: red;
+		font-family: Arial;
+		color: white;
+		font-size: 20px;
+		text-transform: uppercase;
+		text-align: center;
+		display: inline-block;
+		vertical-align: middle;
+		margin:20px;
+	}
+
+	div.caja:hover {
+		-webkit-animation: 1s balanceo 1;
+		-moz-animation: 1s balanceo 1;
+		animation: 1s balanceo 1;
+		transform-origin: top center
+	}		
+
+
+	@keyframes balanceo{
+		20% {
+			transform: scale(0.7) rotate(-6deg);
+		}	
+		30%, 70% {
+			transform: scale(1.1) rotate(6deg);
+		}	
+		50%, 90% {
+			transform: scale(1.1) rotate(-6deg);
+		}	
+	}
+	</style>
+</head>
+<body>
+<div class="caja">Balanceo</div>
+</body>
+</html>
