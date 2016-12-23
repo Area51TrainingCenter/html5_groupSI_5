@@ -11,20 +11,11 @@
 				background-color: white;
 				background-image: url(personaje.png);
 				background-position: 0 0;
-				animation: 1s posicion steps(8) infinite,
-						   3s caminar linear infinite;
+				/* transition: all 4s; */
 			}
 
-			@keyframes posicion {
-				to {
-					background-position-x: -960px
-				}
-			}
-
-			@keyframes caminar {
-				100% {
-					transform: translateX(600px);
-				}
+			div:hover {
+				background-position: -120px 0
 			}
 		</style>
 	</head>
