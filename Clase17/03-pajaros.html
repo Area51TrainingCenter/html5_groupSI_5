@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<style>
+			body {
+				background-color: black;
+			}
+			div {
+				width: 150px;
+				height: 150px;
+				background-color: white;
+				background-image: url(pajaros.png);
+				background-position: 0 0;
+				animation: 0.1s posicion steps(4) infinite,
+						   3s caminar linear infinite;
+			}
+
+			@keyframes posicion {
+				to {
+					background-position-x: -600px
+				}
+			}
+
+			@keyframes caminar {
+				100% {
+					transform: translateX(600px);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div></div>
+	</body>
+</html>
