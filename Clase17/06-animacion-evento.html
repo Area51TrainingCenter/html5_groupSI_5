@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="animate.css">
+		<style>
+			div {
+				width: 359px;
+				height: 145px;
+				position: relative;
+				top: 0;
+				left: 700px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="animated">
+			<img src="auto.jpg">
+		</div>
+		<button>Animar</button>
+		<button>Des-Animar</button>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script>
+			$(function(){
+				$("button").eq(0).on("click", function(){
+					$("div").addClass("bounceInLeft")
+				})
+
+				$("button").eq(1).on("click", function(){
+					$("div").removeClass("bounceInLeft")
+				})
+
+			})
+		</script>
+
+
+
+	</body>
+</html>
