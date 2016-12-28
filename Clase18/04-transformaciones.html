@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+	<head>
+
+		<style>
+			body {
+				perspective: 3000px
+			}
+			div {
+				width: 300px;
+				height: 300px;
+				background-color: green;
+				margin: 20px auto;
+			}
+
+
+			div.animacion1:hover {
+				animation: traslacion 2s linear forwards;
+			}
+
+			@keyframes traslacion {
+				100% {
+					transform:  translateZ(-500px);
+				}
+			}
+
+			div.animacion2:hover {
+				animation: rotacion 2s linear infinite;
+			}
+
+			@keyframes rotacion {
+				100% {
+					transform:  rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+				}
+			}
+
+			div.animacion3:hover {
+				animation: escala 2s linear infinite;
+			}
+
+			@keyframes escala {
+				100% {
+					transform:  scaleX(.3);
+				}
+			}
+
+			div.animacion4:hover {
+				animation: inclinar 2s linear infinite;
+			}
+
+			@keyframes inclinar {
+				100% {
+					transform:  skewX(-45deg);
+				}
+			}
+		</style>
+		
+	</head>
+	<body>
+
+		<div class="animacion1"></div>
+
+		<div class="animacion2"></div>
+
+		<div class="animacion3"></div>
+
+		<div class="animacion4"></div>
+		
+	</body>
+</html>
