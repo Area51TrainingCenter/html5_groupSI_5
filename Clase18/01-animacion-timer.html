@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+	<head>
+		<link rel="stylesheet" href="animate.css">
+		<style>
+			div {
+				width: 359px;
+				height: 145px;
+				position: relative;
+				top: 0;
+				left: 700px;
+				opacity: 0;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="animated">
+			<img src="auto.jpg">
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+		<script>
+			$(function(){
+
+				setInterval(
+					function(){
+						$("div").removeClass("bounceInLeft")
+						$("div").removeClass("fadeOut")
+						$("div").css("opacity", "0")
+
+
+						setTimeout(
+							function(){
+								$("div").addClass("bounceInLeft")
+								$("div").css("opacity", "1")
+							},
+							2000
+						)
+
+						setTimeout(
+							function(){
+								$("div").addClass("fadeOut")
+							},
+							4000
+						)
+
+
+					},
+					5000
+				)
+
+				setTimeout(
+					function(){
+						$("div").addClass("bounceInLeft")
+						$("div").css("opacity", "1")
+					},
+					2000
+				)
+
+				setTimeout(
+					function(){
+						$("div").addClass("fadeOut")
+					},
+					4000
+				)
+
+			})
+		</script>
+
+
+
+	</body>
+</html>
