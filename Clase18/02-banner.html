@@ -3,12 +3,14 @@
 	<head>
 		<link rel="stylesheet" href="animate.css">
 		<style>
-			div#contenedor {
+			a#contenedor {
 				width: 300px;
 				height: 600px;
 				background-color: black;
 				margin: 50px auto;
 				position: relative;
+				overflow: hidden;
+				display: block;
 			}
 
 			div#img1 {
@@ -26,18 +28,29 @@
 				opacity: 0;
 				z-index: 1;
 			}
+
+			div#img3 {
+				position: absolute;
+				top: 30px;
+				left: 25px;
+				opacity: 0;
+				z-index: 1;
+			}
 		</style>
 	</head>
 
 	<body>
-		<div id="contenedor">
+		<a id="contenedor" href="http://google.com" target="_blank">
 			<div id="img1" class="animated">
 				<img src="img/1.png" />
 			</div>
 			<div id="img2" class="animated">
 				<img src="img/2.jpg" />
 			</div>
-		</div>
+			<div id="img3" class="animated">
+				<img src="img/3.png" />
+			</div>			
+		</a>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -46,44 +59,44 @@
 
 				setInterval(
 					function(){
-						$("div#img1").attr("class", "animated")
-						$("div#img1").css("opacity", 0)
 
-						$("div#img2").attr("class", "animated")
-						$("div#img2").css("opacity", 0)
+						resetear("div#img1")
+						resetear("div#img2")
+						resetear("div#img3")
 
 						animaciones()
 
 					},
-					5000
+					8000
 				)
 
 
 				function animaciones(){
 					// img1: logo 
-					setTimeout(
-						function() {
-							$("div#img1").addClass("bounceInDown")
-							$("div#img1").css("opacity",1)
-						},
-						700
-					)
-					// img2: primera cara de vader
-					setTimeout(
-						function() {
-							$("div#img2").addClass("fadeIn")
-							$("div#img2").css("opacity",1)
-						},
-						1600
-					)
+					animar("div#img1", "bounceInDown", 700)
 
+					// img2: primera cara de vader
+					animar("div#img2", "fadeIn", 1600)
+
+					animar("div#img1", "fadeOut", 4000)
+					animar("div#img2", "fadeOut", 4000)
+
+					animar("div#img3", "slideInLeft", 4200)
+				}
+
+				function resetear(selector) {
+					$(selector).attr("class", "animated")
+					$(selector).css("opacity", 0)
+				}
+
+				function animar(selector, clase, tiempo) {
 					setTimeout(
 						function() {
-							$("div#img1").addClass("fadeOut")
-							$("div#img2").addClass("fadeOut")
+							$(selector).addClass(clase)
+							$(selector).css("opacity",1)
 						},
-						4000
-					)
+						tiempo
+					)					
 				}
 
 				animaciones()
