@@ -3,12 +3,23 @@
 <head>
 	<title></title>
 	<style>
+		div.pelicula {
+			width: 203px;
+			height: 300px;
+			perspective: 1000px;
+			margin: 30px;
+			float: left;
+		}
 		div.contenedor {
 			width: 203px;
 			height: 300px;
-			margin: 100px;
 			transform-style: preserve-3d;
 			position: relative;
+			transition:  transform 1s;
+		}
+
+		div.contenedor:hover {
+			transform: rotateY(-75deg)
 		}
 
 		div.poster {
@@ -19,22 +30,145 @@
 			left: 0;
 			transform: translateZ(101.5px)
 		}
+
+		div.detalle {
+			width: 203px;
+			height: 300px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: rotateY(90deg) translateZ(101.5px);
+			background-color: yellow;
+		}
+
+		div.sinopsis {
+			font-family: Arial;
+			overflow-x: hidden;
+			overflow-y: scroll;
+			height: 130px;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
 	</style>
 </head>
 <body>
-
-	<div class="contenedor">
-		<div class="poster">
-			<img src="poster.jpg">
+	<div class="pelicula">
+		<div class="contenedor">
+			<div class="poster">
+				<img src="poster.jpg">
+			</div>
+			<div class="detalle">
+				<div class="trailer">
+					<iframe width="203" src="https://www.youtube.com/embed/c66KU4ldUM0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="sinopsis">
+					<h2>Sing</h2>
+					Sing es una película de comedia musical animada estadounidense dirigida y escrita por Garth Jennings, y desarrollado y producido por Illumination Entertainment. La película estará protagonizada por Matthew McConaughey y John C. Reilly.
+				</div>
+			</div>
 		</div>
-
-		<div class="detalle">
-			<div class="trailer"></div>
-			<div class="sinopsis"></div>
-		</div>
-
-
 	</div>
 
+	<div class="pelicula">
+		<div class="contenedor">
+			<div class="poster">
+				<img src="poster.jpg">
+			</div>
+			<div class="detalle">
+				<div class="trailer">
+					<iframe width="203" src="https://www.youtube.com/embed/c66KU4ldUM0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="sinopsis">
+					<h2>Sing</h2>
+					Sing es una película de comedia musical animada estadounidense dirigida y escrita por Garth Jennings, y desarrollado y producido por Illumination Entertainment. La película estará protagonizada por Matthew McConaughey y John C. Reilly.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pelicula">
+		<div class="contenedor">
+			<div class="poster">
+				<img src="poster.jpg">
+			</div>
+			<div class="detalle">
+				<div class="trailer">
+					<iframe width="203" src="https://www.youtube.com/embed/c66KU4ldUM0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="sinopsis">
+					<h2>Sing</h2>
+					Sing es una película de comedia musical animada estadounidense dirigida y escrita por Garth Jennings, y desarrollado y producido por Illumination Entertainment. La película estará protagonizada por Matthew McConaughey y John C. Reilly.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pelicula">
+		<div class="contenedor">
+			<div class="poster">
+				<img src="poster.jpg">
+			</div>
+			<div class="detalle">
+				<div class="trailer">
+					<iframe width="203" src="https://www.youtube.com/embed/c66KU4ldUM0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="sinopsis">
+					<h2>Sing</h2>
+					Sing es una película de comedia musical animada estadounidense dirigida y escrita por Garth Jennings, y desarrollado y producido por Illumination Entertainment. La película estará protagonizada por Matthew McConaughey y John C. Reilly.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pelicula">
+		<div class="contenedor">
+			<div class="poster">
+				<img src="poster.jpg">
+			</div>
+			<div class="detalle">
+				<div class="trailer">
+					<iframe width="203" src="https://www.youtube.com/embed/c66KU4ldUM0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="sinopsis">
+					<h2>Sing</h2>
+					Sing es una película de comedia musical animada estadounidense dirigida y escrita por Garth Jennings, y desarrollado y producido por Illumination Entertainment. La película estará protagonizada por Matthew McConaughey y John C. Reilly.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pelicula">
+		<div class="contenedor">
+			<div class="poster">
+				<img src="poster.jpg">
+			</div>
+			<div class="detalle">
+				<div class="trailer">
+					<iframe width="203" src="https://www.youtube.com/embed/c66KU4ldUM0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="sinopsis">
+					<h2>Sing</h2>
+					Sing es una película de comedia musical animada estadounidense dirigida y escrita por Garth Jennings, y desarrollado y producido por Illumination Entertainment. La película estará protagonizada por Matthew McConaughey y John C. Reilly.
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pelicula">
+		<div class="contenedor">
+			<div class="poster">
+				<img src="poster.jpg">
+			</div>
+			<div class="detalle">
+				<div class="trailer">
+					<iframe width="203" src="https://www.youtube.com/embed/c66KU4ldUM0" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="sinopsis">
+					<h2>Sing</h2>
+					Sing es una película de comedia musical animada estadounidense dirigida y escrita por Garth Jennings, y desarrollado y producido por Illumination Entertainment. La película estará protagonizada por Matthew McConaughey y John C. Reilly.
+				</div>
+			</div>
+		</div>
+	</div>					
 </body>
 </html>
