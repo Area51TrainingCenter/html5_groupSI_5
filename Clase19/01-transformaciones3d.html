@@ -3,12 +3,31 @@
 <head>
 	<title></title>
 	<style>
+		body {
+			perspective: 1000px;
+		}
 		div {
-			
+			width: 400px;
+			height: 400px;
+			background-image: url(fondo.jpg);
+			margin: 50px auto;
+			/* transform: rotateZ(45deg) translateX(80px); */
+			/* transform: rotateY(45deg); */
+			transform-style: preserve-3d;
+			backface-visibility: hidden;
+			animation: 3s girar linear infinite;
+		}
+
+		@keyframes girar {
+			100% {
+				transform: rotateY(360deg);
+			}
 		}
 	</style>
 </head>
 <body>
+
+	<div class="rotacion"></div>
 
 
 

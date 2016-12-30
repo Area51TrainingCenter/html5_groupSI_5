@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body {
+			perspective: 1000px;
+		}
+		div {
+			width: 460px;
+			height: 460px;
+			background-color: green;
+			margin: 50px auto;
+			transform-style: preserve-3d;
+			position: relative;
+			animation: 4s girar linear infinite;
+		}
+
+		div article {
+			backface-visibility: hidden;
+			font-size: 30px;
+			font-family: Arial;
+			color: white;
+		}
+
+		div article.uno {
+			width: 400px;
+			height: 400px;
+			background-image: url(fondo.jpg);
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			transform: translateZ(200px)
+		}
+
+		div article.dos {
+			width: 400px;
+			height: 400px;
+			background-image: url(fondo.jpg);
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			transform: translateZ(-200px) rotateY(180deg)
+		}
+
+		div article.tres {
+			width: 400px;
+			height: 400px;
+			background-image: url(fondo.jpg);
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			transform: rotateY(-90deg) translateZ(200px)
+			/* transform: translateZ(-200px) rotateY(180deg) */
+		}
+
+		div article.cuatro {
+			width: 400px;
+			height: 400px;
+			background-image: url(fondo.jpg);
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			transform: rotateY(90deg) translateZ(200px)
+			/* transform: translateZ(-200px) rotateY(180deg) */
+		}
+
+		div article.cinco {
+			width: 400px;
+			height: 400px;
+			background-image: url(fondo.jpg);
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			transform: rotateX(90deg) translateZ(200px)
+			/* transform: translateZ(-200px) rotateY(180deg) */
+		}
+
+		div article.seis {
+			width: 400px;
+			height: 400px;
+			background-image: url(fondo.jpg);
+			position: absolute;
+			top: 30px;
+			left: 30px;
+			transform: rotateX(-90deg) translateZ(200px)
+			/* transform: translateZ(-200px) rotateY(180deg) */
+		}
+
+		@keyframes girar {
+			100% {
+				transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg)
+			}
+		}
+	</style>
+</head>
+<body>
+
+	<div class="cubo">
+		<article class="uno">UNO</article>
+		<article class="dos">DOS</article>
+		<article class="tres">TRES</article>
+		<article class="cuatro">CUATRO</article>
+		<article class="cinco">CINCO</article>
+		<article class="seis">SEIS</article>
+	</div>
+
+
+
+</body>
+</html>
