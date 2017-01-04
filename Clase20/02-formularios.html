@@ -9,7 +9,33 @@
 		input {
 			border: 0;
 			border-bottom:  1px solid black;
+			color: blue;
 		}
+
+		form {
+			border: 1px solid black;
+		}
+
+		input::-webkit-input-placeholder { /* WebKit browsers */
+            color: blue;
+            font-size: 8px;
+        }
+
+        input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+            color: blue;
+            font-size: 8px;
+        }
+
+        input::-moz-placeholder { /* Mozilla Firefox 19+ */
+            color: blue;
+            font-size: 8px;
+        }
+
+        input:-ms-input-placeholder { /* Internet Explorer 10+ */
+           color: blue;
+           font-size: 8px;
+        }
+
 	</style>
 </head>
 <body>
