@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+</head>
+<body>
+
+<form method="post" action="registro.php">
+	<input type="text" name="nombres" placeholder="Nombre completo" required><br/>
+	<input type="password" name="contrasena" placeholder="Contraseña" required><br/>
+	<input type="email" name="correo" placeholder="Correo" required><br/>
+	<input type="number" name="edad"><br/>
+	<input type="date" name="fecha"><br/>
+	<input type="color" name="colorFavorito"><br/>
+	<input type="tel" name="telefono"><br/>
+	<input type="radio" name="sexo" value="h" id="sHombre"> <label for="sHombre">Hombre</label><br/>
+	<input type="radio" name="sexo" value="m" id="sMujer"> <label for="sMujer">Mujer</label><br/>
+	<input type="file" name="cv"><br/>
+	<input type="checkbox" name="terminos" id="terminos"><label for="terminos">Acepto los términos y condiciones</label><br/>
+	¿Cómo se enteró de esta página?
+	<select name="comoSeEntero">
+		<option value="1">Google</option>
+		<option value="2">Mailing</option>
+		<option value="3">TV</option>
+		<option value="4">Radio</option>
+		<option value="5">Un amigo</option>
+	</select>
+	<input type="submit" value="Registrar">
+</form>
+
+
+</body>
+</html>
