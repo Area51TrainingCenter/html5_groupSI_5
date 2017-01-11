@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
+	<style>
+	div.terminos {
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<a rel="galeria" href="grande.jpg" class="fancy_galeria">
+		<img src="chica.jpg">
+	</a>
+
+	<a rel="galeria" href="grande2.jpg" class="fancy_galeria">
+		<img src="chica2.jpg">
+	</a>	
+
+	<br>
+	<br>
+	<a href="#terminos" class="fancy">Términos y Condiciones</a>
+
+
+	<div class="terminos" id="terminos">
+		<h3>Términos y Condiciones</h3>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		<button>Cerrar</button>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="fancybox/jquery.fancybox.js"></script>
+	<script>
+		$(function(){
+			$("a[rel=galeria]").fancybox();
+
+			$(".fancy").fancybox({
+				width: 400,
+				height: 400,
+				autoSize: false,
+				modal: true
+			}).trigger("click");
+
+			$("button").on("click", function(){
+				$.fancybox.close();
+			})
+
+		})
+	</script>
+
+</body>
+</html>
