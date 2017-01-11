@@ -14,66 +14,84 @@
 		margin: 10px auto;
 	}	
 
-	div.banners div {
+	div.banners div.contenido {
 		width:100%;
 		height: 100%;
 		font-family: Verdana;
 		font-size: 20px;
 		color: #0f0;
-		background-size: cover;
 	}
+
+
 
 	div.banners div.foto1 {
 		background-image:url(img/img01.jpg);
+		background-size: cover;
+		width: 1000px;
+		height: 400px;
 	}
 	div.banners div.foto2 {
 		background-image:url(img/img02.jpg);
+		background-size: cover;
+		width: 1000px;
+		height: 400px;
 	}
 	div.banners div.foto3 {
 		background-image:url(img/img03.jpg);
+		background-size: cover;
+		width: 1000px;
+		height: 400px;
 	}
 	div.banners div.foto4 {
 		background-image:url(img/img04.jpg);
+		background-size: cover;
+		width: 1000px;
+		height: 400px;
 	}
 	div.banners div.foto5 {
 		background-image:url(img/img05.jpg);
+		background-size: cover;
+		width: 1000px;
+		height: 400px;
 	}
 	div.banners div.foto6 {
 		background-image:url(img/img06.jpg);
+		background-size: cover;
+		width: 1000px;
+		height: 400px;
 	}
 
-	h2 {
-		width: 60%;
-		background-color: #fff;
-		margin: 200px auto;
-		font-family: Arial;
-		font-size: 30px;
-		color: #000;
-		padding: 15px;
-		opacity:0;
+	.escalar {
+		animation: crecer 20s linear both;
+	}
+
+	@keyframes crecer {
+		100% {
+			transform: scale(1.2)
+		}
 	}
 	</style>
 </head>
 <body>
 
 <div class="banners">
-	<div class="foto1">
-		<h2 class="animated">Título 1</h2>
+	<div class="contenido">
+		<div class="foto1"></div>
 	</div>
-	<div class="foto2">
-		<h2 class="animated">Título 2</h2>
+	<div class="contenido">
+		<div class="foto2"></div>
 	</div>
-	<div class="foto3">
-		<h2 class="animated">Título 3</h2>
+	<div class="contenido">
+		<div class="foto3"></div>
 	</div>
-	<div class="foto4">
-		<h2 class="animated">Título 4</h2>
+	<div class="contenido">
+		<div class="foto4"></div>
 	</div>
-	<div class="foto5">
-		<h2 class="animated">Título 5</h2>
+	<div class="contenido">
+		<div class="foto5"></div>
 	</div>
-	<div class="foto6">
-		<h2 class="animated">Título 6</h2>
+	<div class="contenido">
+		<div class="foto6"></div>
 	</div>
 </div>
 
@@ -84,11 +102,9 @@
 <script>
 	$(function(){
 		$(".banners").on("init", function(slick){
-				$("h2").removeClass("bounceInRight bounceInLeft slideInLeft slideInRight rubberBand rotateIn");
-				$("h2").css("opacity", 0);	
-				
-				$("div.foto1 h2").addClass("bounceInRight")
-				$("div.foto1 h2").css("opacity", 1);		
+				$("div.foto1").removeClass("escalar");
+
+				$("div.foto1").addClass("escalar");	
 		})
 
 
@@ -98,43 +114,42 @@
 			dots: true,
 			autoplay: true, //Indica si se mueve automáticament
 			autoplaySpeed: 8000, // Indica la velocidad entre banner y banner
+			fade: true
 		});
 
 
 
 		$(".banners").on("afterChange", function(slick, currentSlide){
-				$("h2").removeClass("bounceInRight bounceInLeft slideInLeft slideInRight rubberBand rotateIn");
-				$("h2").css("opacity", 0);	
+				$("div.foto1").removeClass("escalar")
+				$("div.foto2").removeClass("escalar")
+				$("div.foto3").removeClass("escalar")
+				$("div.foto4").removeClass("escalar")
+				$("div.foto5").removeClass("escalar")
+				$("div.foto6").removeClass("escalar")
 
 				if(currentSlide.currentSlide==0) {
-					$("div.foto1 h2").addClass("bounceInRight")
-					$("div.foto1 h2").css("opacity", 1);
+					$("div.foto1").addClass("escalar")
 				}
 
 				if(currentSlide.currentSlide==1) {
-					$("div.foto2 h2").addClass("bounceInLeft")
-					$("div.foto2 h2").css("opacity", 1);
+					$("div.foto2").addClass("escalar")
 				}
 
 				if(currentSlide.currentSlide==2) {
-					$("div.foto3 h2").addClass("slideInLeft")
-					$("div.foto3 h2").css("opacity", 1);
+					$("div.foto3").addClass("escalar")
 				}
 
 				if(currentSlide.currentSlide==3) {
-					$("div.foto4 h2").addClass("slideInRight")
-					$("div.foto4 h2").css("opacity", 1);
+					$("div.foto4").addClass("escalar")
 				}
 
 				if(currentSlide.currentSlide==4) {
-					$("div.foto5 h2").addClass("rubberBand")
-					$("div.foto5 h2").css("opacity", 1);
+					$("div.foto5").addClass("escalar")
 				}
 
 
 				if(currentSlide.currentSlide==5) {
-					$("div.foto6 h2").addClass("rotateIn")
-					$("div.foto6 h2").css("opacity", 1);
+					$("div.foto6").addClass("escalar")
 				}
 				
 		})
