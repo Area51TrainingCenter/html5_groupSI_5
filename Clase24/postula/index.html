@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+	<style>
+			div.info {
+				position:fixed;
+				width:200px;
+				background-color: white;
+				z-index:10000;
+				padding-top:10px;
+				padding-bottom:10px;
+				text-align: center;
+				font-family: Verdana;
+				font-size: 25px;
+				font-weight: bold;
+			}
+
+	</style>
+</head>
+<body>
+	<div class="info">0</div>
+
+	<div class="contenedor">
+		<div class="escenario" data-0="background-color:rgb(0,204,255);left:0px" data-3000="background-color:rgb(0,0,0);left:-2000px" data-5000="background-color:rgb(0,0,0);left:-2000px" data-10000="left:-4000px">
+			<div class="nubes">
+				<img src="img/nubes.png">
+			</div>
+			<div class="edificios">
+				<img src="img/edificios.png">
+			</div>
+			<div class="piso"></div>
+		</div>
+
+		<div class="cartel-carrera"  data-8840="top:-1634px" data-10000="top:-1200px" data-12000="top:-1634px">
+			<img src="img/carrera-cartel.png">
+		</div>
+
+	</div>
+
+
+    <script type="text/javascript" src="../skrollr.min.js"></script>
+    <script type="text/javascript">
+    var s = skrollr.init();
+
+		// Sirve para mostrar el desplazamiento del scroll
+	window.addEventListener("scroll", function(){
+		var desplazamiento = document.body.scrollTop;
+		var info = document.getElementsByClassName("info");
+		info[0].innerHTML = desplazamiento;
+	});
+    </script>
+</body>
+</html>
