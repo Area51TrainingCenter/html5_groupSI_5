@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<button class="azul">Azul</button>
+	<button class="rojo">Rojo</button>
+	<button class="amarillo">Amarillo</button>
+	<button class="verde">Verde</button>
+
+
+	<script>
+		$(function(){
+			
+
+			$("body").css("background-color", localStorage.getItem("miColorFavorito"))
+
+			$(".azul").on("click", function(){
+				$("body").css("background-color", "blue")
+				localStorage.setItem("miColorFavorito", "blue")
+			})
+			$(".rojo").on("click", function(){
+				$("body").css("background-color", "red")
+				localStorage.setItem("miColorFavorito", "red")
+			})
+
+			$(".amarillo").on("click", function(){
+				$("body").css("background-color", "yellow")
+				localStorage.setItem("miColorFavorito", "yellow")
+			})
+
+			$(".verde").on("click", function(){
+				$("body").css("background-color", "green")
+				localStorage.setItem("miColorFavorito", "green")
+			})
+			// alert( sessionStorage.getItem("miColorFavorito") )
+		})
+		
+
+
+	</script>
+
+</body>
+</html>
